@@ -1,0 +1,230 @@
+/* Main body style*/
+body {
+	background: black;
+	color: red;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/* h1, h2, h3 Styles */
+h1 {
+	color: gainsboro;
+	font-size: 42px;
+	font-family: Arial;
+	text-align: center;
+	text-shadow: 4px 4px 6px black, 0 0 45px grey, 0 0 15px white;
+}
+
+h2 {
+	font-size: 28px;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: Arial;
+	text-align: center;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: Arial;
+	text-align: justify;
+}
+
+
+h5 {
+	text-align: center;
+}
+
+h6 {
+	color: grey;
+	font-size: 12px;
+	font-family: Arial;
+	text-align: center;
+}
+
+/* Link Styles */
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: maroon;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: red;
+}
+
+.bodyTable{
+	border: 0px solid grey;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+table.bodyTable td{
+	padding: 10px;
+}
+
+.lineBox{
+	width: 75%;
+	height: 1px;
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Spacer box, used to add in extra space */
+.spacerBox{
+	width: 90%;
+	height: 40px;
+}
+
+/* Base Contents */
+
+.headTable {
+	width: 99%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-image: 
+	radial-gradient(circle at center, transparent, rgba(245,245,245,0) 80%, rgba(245,245,245,1)),
+	url(../imgs/lbh3.jpg);
+	background-repeat: no-repeat, no-repeat; /* No repeat for both layers */
+	background-position: center, center;     /* Both layers centered */
+	background-size: cover, cover;           /* Both layers cover the entire container */
+	border: 5px black solid;
+}
+
+ .headerContainer{
+	display:inline-block;
+	height: auto;
+	width: 75%;
+	margin: auto;
+	border: 0px solid black;
+	background-color:rgba(128, 128, 128, 0.5);
+	text-shadow: 2px 2px 3px black, 0 0 45px white, 0 0 15px whitesmoke;
+}
+
+.contentContainer{
+	display:inline-block;
+	height: auto;
+	width: 60%;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid whitesmoke;
+	background-color:rgba(128, 128, 128, 0.5);
+	color: whitesmoke;
+	text-shadow: 2px 2px 3px black, 0 0 45px black, 0 0 15px grey;
+}
+
+.buttonBox{
+	background: transparent;
+	vertical-align: top;
+	position: relative;	
+	display:inline-block;
+	height: auto;
+	width: 300px;
+	border: 0px;
+	color: whitesmoke;
+	margin: auto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 2px 4px black, 0 0 10px black, 0 0 15px grey;
+	border-top-left-radius: 15% 50%;	
+	border-top-right-radius: 15% 50%;	
+	border-bottom-left-radius: 15% 50%;	
+	border-bottom-right-radius: 15% 50%;
+}
+
+.buttonBox:hover {
+	background-color:rgba(128, 128, 128, 0.5);
+	color: maroon;
+	border: 0px;
+}
+
+.buttonBoxMain{
+	height: auto;
+	width: 500px;
+	border: 0px solid;
+	color: gainsboro;
+    font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	margin: auto;
+	text-decoration: none;
+}
+
+.buttonBoxMain:hover {
+	background-color:rgba(128, 128, 128, 0.5);
+	text-shadow: 6px 6px 8px black, 0 0 45px firebrick, 0 0 20px crimson;
+	color: beige;
+	border: 0px solid;
+	border-top-left-radius: 50% 50%;	
+	border-top-right-radius: 50% 50%;	
+	border-bottom-left-radius: 50% 50%;	
+	border-bottom-right-radius: 50% 50%;
+}
+
+.subTitleBox{
+	height: auto;
+	width: 500px;
+	border: 0px solid;
+	color: snow;
+    font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	margin: auto;
+	text-decoration: none;
+}
+
+.logoImageDiscord {
+	height: 22px;
+  }
+
+.footer {
+	background-color:rgba(0, 0, 0, 0.5);
+	width: 99%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 5px black solid;
+}
+
+.footer a:link {
+	color: black;
+}
+
+.footer a:visited {
+	color: darkblue;
+}
+
+.footer a:hover {
+	color: dodgerblue;
+}
+
+.bodyTable a:link {
+	color: black;
+}
+
+.bodyTable a:visited {
+	color: lightskyblue;
+}
+
+.bodyTable a:hover {
+	color: dodgerblue;
+}
