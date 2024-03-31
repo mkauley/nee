@@ -5,6 +5,36 @@ body {
 	font-family: Verdana, Arial, sans-serif;
 }
 
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { 
+	align-self: stretch;
+	grid-area: main; 
+}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main main right'
+    'footer footer footer footer footer footer footer';
+  gap: 1px;
+  background-color: black;
+  padding: 1px;
+}
+
+.grid-container > div {
+  background-color: dimgrey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 /* h1, h2, h3 Styles */
 h1 {
 	color: gainsboro;
@@ -39,7 +69,7 @@ h5 {
 }
 
 h6 {
-	color: grey;
+	color: black;
 	font-size: 12px;
 	font-family: Arial;
 	text-align: center;
@@ -47,11 +77,11 @@ h6 {
 
 /* Link Styles */
 a:link {
-	color: white;
+	color: ivory;
 }
 
 a:visited {
-	color: maroon;
+	color: gainsboro;
 }
 
 a:hover {
@@ -62,17 +92,8 @@ a:active {
 	color: red;
 }
 
-.bodyTable{
-	border: 0px solid grey;
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-  }
 
-table.bodyTable td{
-	padding: 10px;
-}
-
+/* Various boxes that get used */
 .lineBox{
 	width: 75%;
 	height: 1px;
@@ -87,44 +108,11 @@ table.bodyTable td{
 	height: 40px;
 }
 
-/* Base Contents */
-
-.headTable {
-	width: 99%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	background-image: 
-	radial-gradient(circle at center, transparent, rgba(245,245,245,0) 80%, rgba(245,245,245,1)),
-	url(../imgs/lbh3.jpg);
-	background-repeat: no-repeat, no-repeat; /* No repeat for both layers */
-	background-position: center, center;     /* Both layers centered */
-	background-size: cover, cover;           /* Both layers cover the entire container */
-	border: 5px black solid;
-}
-
- .headerContainer{
-	display:inline-block;
-	height: auto;
+.contentBox{
 	width: 75%;
-	margin: auto;
-	border: 0px solid black;
-	background-color:rgba(128, 128, 128, 0.5);
-	text-shadow: 2px 2px 3px black, 0 0 45px white, 0 0 15px whitesmoke;
-}
-
-.contentContainer{
-	display:inline-block;
-	height: auto;
-	width: 60%;
-	padding: 30px;
+	border: 3px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	border: 4px solid whitesmoke;
-	background-color:rgba(128, 128, 128, 0.5);
-	color: whitesmoke;
-	text-shadow: 2px 2px 3px black, 0 0 45px black, 0 0 15px grey;
 }
 
 .buttonBox{
@@ -133,15 +121,14 @@ table.bodyTable td{
 	position: relative;	
 	display:inline-block;
 	height: auto;
-	width: 300px;
-	border: 0px;
-	color: whitesmoke;
+	width: 200px;
+	border: 1px;
 	margin: auto;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
-	text-shadow: 2px 2px 4px black, 0 0 10px black, 0 0 15px grey;
+	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
 	border-top-left-radius: 15% 50%;	
 	border-top-right-radius: 15% 50%;	
 	border-bottom-left-radius: 15% 50%;	
@@ -149,12 +136,12 @@ table.bodyTable td{
 }
 
 .buttonBox:hover {
-	background-color:rgba(128, 128, 128, 0.5);
-	color: maroon;
+	background-color: lightgrey;
+	color: white;
 	border: 0px;
 }
 
-.buttonBoxMain{
+.headerButton{
 	height: auto;
 	width: 500px;
 	border: 0px solid;
@@ -167,7 +154,7 @@ table.bodyTable td{
 	text-decoration: none;
 }
 
-.buttonBoxMain:hover {
+.headerButton:hover {
 	background-color:rgba(128, 128, 128, 0.5);
 	text-shadow: 6px 6px 8px black, 0 0 45px firebrick, 0 0 20px crimson;
 	color: beige;
@@ -191,40 +178,5 @@ table.bodyTable td{
 	text-decoration: none;
 }
 
-.logoImageDiscord {
-	height: 22px;
-  }
+/* Base Contents */
 
-.footer {
-	background-color:rgba(0, 0, 0, 0.5);
-	width: 99%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	border: 5px black solid;
-}
-
-.footer a:link {
-	color: black;
-}
-
-.footer a:visited {
-	color: darkblue;
-}
-
-.footer a:hover {
-	color: dodgerblue;
-}
-
-.bodyTable a:link {
-	color: black;
-}
-
-.bodyTable a:visited {
-	color: lightskyblue;
-}
-
-.bodyTable a:hover {
-	color: dodgerblue;
-}
