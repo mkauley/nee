@@ -5,14 +5,22 @@ body {
 	font-family: Verdana, Arial, sans-serif;
 }
 
-.item1 { grid-area: header; }
+.item1 { 
+	grid-area: header; 
+	border-top-left-radius: 15% 95%;	
+	border-top-right-radius: 15% 95%;	
+}
 .item2 { grid-area: menu; }
 .item3 { 
-	align-self: stretch;
 	grid-area: main; 
+	align-self: stretch;
 }
 .item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item5 { 
+	grid-area: footer; 
+	border-bottom-left-radius: 15% 95%;	
+	border-bottom-right-radius: 15% 95%;	
+}
 
 .grid-container {
   width:95%;
@@ -23,7 +31,7 @@ body {
     'header header header header header header header'
     'menu main main main main main right'
     'footer footer footer footer footer footer footer';
-  gap: 1px;
+  gap: 3px;
   background-color: black;
   padding: 1px;
 }
@@ -39,30 +47,39 @@ body {
 h1 {
 	color: gainsboro;
 	font-size: 42px;
-	font-family: Arial;
 	text-align: center;
 	text-shadow: 4px 4px 6px black, 0 0 45px grey, 0 0 15px white;
 }
 
 h2 {
-	font-size: 28px;
-	font-family: Arial;
+	font-size: 34px;
+	font-weight: bold;
+	color: snow;
 	font-weight: bold;
 	text-align: center;
-}
+	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	margin: auto;
+	text-decoration: none;}
 
 h3 {
 	font-size: 24px;
-	font-family: Arial;
+	font-weight: bold;
 	text-align: center;
+	color: snow;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	margin: auto;
+	text-decoration: none;
 }
 
 h4 {
 	font-size: 18px;
-	font-family: Arial;
+	color: whitesmoke;
 	text-align: justify;
+	text-justify: inter-word;
+	padding: 10px;
 }
-
 
 h5 {
 	text-align: center;
@@ -71,13 +88,13 @@ h5 {
 h6 {
 	color: black;
 	font-size: 12px;
-	font-family: Arial;
 	text-align: center;
 }
 
 /* Link Styles */
 a:link {
 	color: ivory;
+	text-decoration: none;
 }
 
 a:visited {
@@ -90,22 +107,6 @@ a:hover {
 
 a:active {
 	color: red;
-}
-
-
-/* Various boxes that get used */
-.lineBox{
-	width: 75%;
-	height: 1px;
-	border: 3px solid black;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* Spacer box, used to add in extra space */
-.spacerBox{
-	width: 90%;
-	height: 40px;
 }
 
 .contentBox{
@@ -128,6 +129,7 @@ a:active {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
+	padding: 10px;
 	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
 	border-top-left-radius: 15% 50%;	
 	border-top-right-radius: 15% 50%;	
@@ -178,5 +180,18 @@ a:active {
 	text-decoration: none;
 }
 
-/* Base Contents */
+/* =================== UNUSED ELEMENTS =================================== */
+.lineBox{
+	width: 75%;
+	height: 1px;
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Spacer box, used to add in extra space */
+.spacerBox{
+	width: 90%;
+	height: 40px;
+}
 
