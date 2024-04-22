@@ -63,8 +63,6 @@ h2 {
 
 h3 {
 	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
 	color: snow;
 	font-weight: bold;
 	text-align: center;
@@ -82,7 +80,11 @@ h4 {
 }
 
 h5 {
+	font-size: 24px;
+	color: snow;
+	font-weight: bold;
 	text-align: center;
+	padding: 5px;
 }
 
 h6 {
@@ -111,7 +113,6 @@ a:active {
 
 .contentBox{
 	width: 75%;
-	border: 3px solid black;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -167,20 +168,33 @@ a:active {
 	border-bottom-right-radius: 50% 50%;
 }
 
-.subTitleBox{
-	height: auto;
-	width: 500px;
-	border: 0px solid;
-	color: snow;
-    font-size: 24px;
-	font-weight: bold;
-	text-align: center;
-	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
-	margin: auto;
-	text-decoration: none;
+.regBox {
+	width: 100%;
 }
 
-/* =================== UNUSED ELEMENTS =================================== */
+.regButton{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 48%;
+	display: inline-block;
+	padding: 2px;
+}
+
+.regButtonLink{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 48%;
+	display: inline-block;
+	padding: 2px;
+}
+
+.regButtonLink:hover {
+	background-color: grey;
+	border-color: black;
+}
+
 .lineBox{
 	width: 75%;
 	height: 1px;
