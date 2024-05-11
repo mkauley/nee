@@ -19,5 +19,9 @@ def register():
 def schedule():
     return render_template('schedule.html', title = 'Meeting Schedules')
 
+@nee.route('/covid.html')
+def covid():
+    return render_template('covid.html', title = 'COVID-19 Policy')
+
 if __name__ == '__main__':
     nee.run(debug=True)

@@ -1,14 +1,14 @@
 /* Main body style*/
 body {
-	background: linear-gradient(90deg, black, white);
-	color: red;
+	background: linear-gradient(90deg, rebeccapurple, midnightblue);
+	color: white;
 	font-family: Verdana, Arial, sans-serif;
 }
 
 .bostonBackground {
 	width: 100%;  /* Define width and height as per requirement */
 	background-image: 
-	radial-gradient(circle at center, transparent, rgba(0,0,0,0) 50%, rgba(0,0,0,1)),
+	radial-gradient(circle at center, transparent, navy 90%, rgba(0,0,0,1)),
 	url(../imgs/skyline.jpg);
 	background-repeat: no-repeat, no-repeat; /* No repeat for both layers */
 	background-position: center, center;     /* Both layers centered */
@@ -27,12 +27,12 @@ body {
 	/*body*/
 	grid-area: b; 
 	align-self: stretch;
-	border: 5px double maroon;
+	border: 5px double darkmagenta;
 	border-top-left-radius: 15% 25%;
 	border-top-right-radius: 15% 25%;
 	border-bottom-left-radius: 15% 25%;
 	border-bottom-right-radius: 15% 25%;
-	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px red;
+	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px purple;
 }
 
 .item4 { 
@@ -70,7 +70,7 @@ h1 {
 	color: gainsboro;
 	font-size: 42px;
 	text-align: center;
-	text-shadow: 4px 4px 6px black, 0 0 45px grey, 0 0 15px white;
+	text-shadow: 6px 6px 8px black, 0 0 45px grey, 0 0 15px white;
 }
 
 h2 {
@@ -79,7 +79,7 @@ h2 {
 	color: snow;
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	text-shadow: 6px 6px 8px darkblue, 0 0 45px darkorchid, 0 0 20px purple;
 	margin: auto;
 	text-decoration: none;}
 
@@ -88,7 +88,7 @@ h3 {
 	color: snow;
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	text-shadow: 4px 4px 6px darkblue, 0 0 45px darkorchid, 0 0 20px purple;
 	margin: auto;
 	text-decoration: none;
 }
@@ -110,7 +110,7 @@ h5 {
 }
 
 h6 {
-	color: black;
+	color: plum;
 	font-size: 12px;
 	text-align: center;
 }
@@ -126,20 +126,20 @@ a:visited {
 }
 
 a:hover {
-	color: red;
+	color: lightblue;
 }
 
 a:active {
-	color: red;
+	color: purple;
 }
 
 .contentBox{
-	background: grey;
-	border: 5px double maroon;
+	background: linear-gradient(90deg, mediumslateblue, midnightblue);
+	border: 5px double darkmagenta;
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px red;
+	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px purple;
 }
 
 .imgBox{
@@ -161,7 +161,7 @@ a:active {
 	text-align: center;
 	text-decoration: none;
 	padding: 10px;
-	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	text-shadow: 4px 4px 6px mediumpurple, 0 0 45px blue, 0 0 15px dodgerblue;
 	border-top-left-radius: 15% 50%;	
 	border-top-right-radius: 15% 50%;	
 	border-bottom-left-radius: 15% 50%;	
@@ -169,8 +169,8 @@ a:active {
 }
 
 .buttonBox:hover {
-	background-color: lightgrey;
-	color: white;
+	background-color: grey;
+	color: lightblue;
 	border: 0px;
 }
 
@@ -182,14 +182,14 @@ a:active {
     font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 4px 4px 6px black, 0 0 45px maroon, 0 0 15px red;
+	text-shadow: 4px 4px 6px mediumpurple, 0 0 45px blue, 0 0 15px dodgerblue;
 	margin: auto;
 	text-decoration: none;
 }
 
 .headerButton:hover {
 	background-color:rgba(128, 128, 128, 0.5);
-	text-shadow: 6px 6px 8px black, 0 0 45px firebrick, 0 0 20px crimson;
+	text-shadow: 6px 6px 8px darkblue, 0 0 45px darkorchid, 0 0 20px purple;
 	color: beige;
 	border: 0px solid;
 	border-top-left-radius: 50% 50%;	
