@@ -23,5 +23,9 @@ def schedule():
 def covid():
     return render_template('covid.html', title = 'COVID-19 Policy')
 
+@nee.route('/general.html')
+def generalinfo():
+    return render_template('general.html', title = 'General Event Information')
+
 if __name__ == '__main__':
     nee.run(debug=True)

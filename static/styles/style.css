@@ -1,6 +1,6 @@
 /* Main body style*/
 body {
-	background: linear-gradient(90deg, rebeccapurple, midnightblue);
+	background: linear-gradient(90deg, indigo, midnightblue);
 	color: white;
 	font-family: Verdana, Arial, sans-serif;
 }
@@ -95,7 +95,7 @@ h3 {
 
 h4 {
 	font-size: 18px;
-	color: whitesmoke;
+	color: snow;
 	text-align: justify;
 	text-justify: inter-word;
 	padding: 20px;
@@ -117,16 +117,16 @@ h6 {
 
 /* Link Styles */
 a:link {
-	color: ivory;
+	color: lightblue;
 	text-decoration: none;
 }
 
 a:visited {
-	color: gainsboro;
+	color: lightskyblue;
 }
 
 a:hover {
-	color: lightblue;
+	color: steelblue;
 }
 
 a:active {
@@ -202,6 +202,15 @@ a:active {
 	width: 100%;
 }
 
+.regSubBox{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 96%;
+	display: inline-block;
+	padding: 2px;
+}
+
 .regButton{
 	background-color: black;
 	border: 1px solid;
@@ -221,7 +230,7 @@ a:active {
 }
 
 .regButtonLink:hover {
-	background-color: grey;
+	background-color: ivory;
 	border-color: black;
 }
 
