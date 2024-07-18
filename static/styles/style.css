@@ -248,3 +248,7 @@ a:active {
 	height: 40px;
 }
 
+/* Specific Image Formats */
+.logo_discord {
+	height: 22px;
+}
