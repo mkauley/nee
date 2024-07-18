@@ -23,6 +23,10 @@ def schedule():
 def covid():
     return render_template('covid.html', title = 'COVID-19 Policy')
 
+@nee.route('/hotels.html')
+def hotels():
+    return render_template('hotels.html', title = 'Hotel Site Information')
+
 @nee.route('/general.html')
 def generalinfo():
     return render_template('general.html', title = 'General Event Information')

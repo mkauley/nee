@@ -102,7 +102,7 @@ h4 {
 }
 
 h5 {
-	font-size: 24px;
+	font-size: 16px;
 	color: snow;
 	font-weight: bold;
 	text-align: center;
@@ -203,27 +203,20 @@ a:active {
 }
 
 .regSubBox{
-	background-color: black;
-	border: 1px solid;
-	border-color: white;
+	background-color: midnightblue;
+	border: 0px;
+	display: inline-block;
 	width: 96%;
-	display: inline-block;
 	padding: 2px;
-}
-
-.regButton{
-	background-color: black;
-	border: 1px solid;
-	border-color: white;
-	width: 48%;
-	display: inline-block;
-	padding: 2px;
+	border-top-left-radius: 15% 25%;
+	border-top-right-radius: 15% 25%;
+	border-bottom-left-radius: 15% 25%;
+	border-bottom-right-radius: 15% 25%;
+	opacity: 0.75;
 }
 
 .regButtonLink{
-	background-color: black;
-	border: 1px solid;
-	border-color: white;
+	border: 0px;
 	width: 48%;
 	display: inline-block;
 	padding: 2px;
@@ -232,6 +225,11 @@ a:active {
 .regButtonLink:hover {
 	background-color: ivory;
 	border-color: black;
+	border-top-left-radius: 25% 25%;
+	border-top-right-radius: 25% 25%;
+	border-bottom-left-radius: 25% 25%;
+	border-bottom-right-radius: 25% 25%;
+	opacity: 0.75;
 }
 
 .lineBox{
