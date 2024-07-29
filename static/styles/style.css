@@ -250,3 +250,12 @@ a:active {
 .logo_discord {
 	height: 22px;
 }
+
+iframe {
+	display: block;
+	margin: auto;
+	height: 1000px;
+	width: 85%;
+	background: black;
+	border: 0;
+}

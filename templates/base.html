@@ -19,6 +19,7 @@
         <a href="/general.html" class="buttonBox">General Info</a><br>
         <a href="/register.html" class="buttonBox">Registration Links</a><br>
         <a href="/schedule.html" class="buttonBox">Schedule</a><br>
+        <a href ="{{ url_for('docs_page',page_type='elysium') }}" class="buttonBox">Rules of Elysium</a><br>
         <a href="/covid.html" class="buttonBox">COVID-19 Policy</a><br>
         <a href="https://www.facebook.com/groups/1908918412737267" class="buttonBox">Facebook Event Page</a><br>
         <a href="/hotels.html" class="buttonBox">Hotels</a><br>
@@ -31,7 +32,7 @@
         {% block content %}{% endblock %}
       </div>  
       <div class="item4">
-        <img src="static/imgs/trankh.png" class="imgBox">
+        <img src="{{ url_for('static',filename='imgs/trankh.png') }}" class="imgBox">
       </div>
       <div class="item5">
         <div class="contentBox">

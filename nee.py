@@ -8,7 +8,7 @@ nee = Flask(__name__)
 @nee.route('/')
 def indexPage():
 
-    return render_template('index.html', title = 'North East Event')
+    return render_template('index.html', title='North East Event')
 
 @nee.route('/register.html')
 def register():
@@ -30,6 +30,16 @@ def hotels():
 @nee.route('/general.html')
 def generalinfo():
     return render_template('general.html', title = 'General Event Information')
+
+@nee.route('/docs/<page_type>')
+def docs_page(page_type):
+    if page_type == 'elysium':
+        page_title = 'Rules of Elysium'
+        page_frame = 'https://docs.google.com/document/d/1HMIB-JvXh6nU0pr8PbIhsF9vNbo1SIhHmmKkcgIt_1o/pub?embedded=true'
+    elif page_type =='nothing':
+        page_title = 'nothing'
+        page_frame = ''
+    return render_template('docs.html', title = page_title, frame = page_frame)
 
 if __name__ == '__main__':
     nee.run(debug=True)
